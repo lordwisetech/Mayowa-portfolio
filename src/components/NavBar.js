@@ -53,7 +53,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/matthew-mayowa-39770a2b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src={navIcon1} alt="" /></a>
                 <a href="https://www.facebook.com/profile.php?id=100092389553082"><img src={navIcon2} alt="" /></a>
-                <a href="https://github.com/lordwisetech"><img src={navIcon4} alt="" /></a>
+               
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
