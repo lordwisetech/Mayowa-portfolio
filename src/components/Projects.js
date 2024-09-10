@@ -7,6 +7,7 @@ import projImg4 from "../assets/img/loginreg.jpg";
 import projImg5 from "../assets/img/anime.jpg";
 import projImg6 from "../assets/img/expense.jpg";
 import projImg7 from "../assets/img/webwizzard.jpg"
+import projImg8 from "../assets/img/chatwiz.jpg"
 
 
 
@@ -69,6 +70,14 @@ export const Projects = () => {
       description: "CHOOSE AND LEARN BY VIDEO TUT",
       imgUrl: projImg7,
 
+    },
+    {
+      posision: 'full',
+      title: 'CHATWIZ',
+      linkUrl: "https://chatwiz-nine.vercel.app",
+      description: "CHAT WITH FRIENDS ADD NEW FRIENDS",
+      imgUrl: projImg8,
+
     }
   ];
 
@@ -85,20 +94,20 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">BAckend</Nav.Link>
+                      <Nav.Link eventKey="first">Fullstack</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Frontend</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Fullstack</Nav.Link>
+                      <Nav.Link eventKey="third">Backend</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                                                           <Row>
                                         {
-                                          projects.filter((project) => project.posision === 'backend')
+                                          projects.filter((project) => project.posision === 'full')
                                           .map((project, index) => {
                                             return (
                                               <ProjectCard
@@ -132,7 +141,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="third">
                     <Row>
                                         {
-                                          projects.filter((project) => project.posision === 'full')
+                                          projects.filter((project) => project.posision === 'backend')
                                           .map((project, index) => {
                                             return (
                                               <ProjectCard
