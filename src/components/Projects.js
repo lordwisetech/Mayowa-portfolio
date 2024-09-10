@@ -22,7 +22,7 @@ export const Projects = () => {
       title: "Wise Blog",
       description: "Simple Blog App in Node.js",
       imgUrl: projImg1,
-      linkUrl: "https://wiseblog.onrender.com"
+      linkUrl: "https://wise-blog-wg1f.vercel.app/"
     },
     {
       posision: "backend",
