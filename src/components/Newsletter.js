@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
+import resume from '../assets/mayowaResume.pdf';
 
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
@@ -28,6 +29,11 @@ export const Newsletter = ({ status, message, onValidated }) => {
            
             <Col md={6} xl={7}>
               <h1>Thank you for visiting my PORTFOLIO</h1>
+              <a href={resume} download>
+      <button className="btn btn-outline-primary btn-lg">
+        <span>Download CV</span>
+      </button>
+    </a> 
             </Col>
           </Row>
         </div>
