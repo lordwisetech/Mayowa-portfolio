@@ -74,7 +74,7 @@ export const Projects = () => {
     {
       posision: 'full',
       title: 'CHATWIZ',
-      linkUrl: "https://chatwiz-nine.vercel.app",
+      linkUrl: "https://chatwiz-nine.vercel.app/register",
       description: "CHAT WITH FRIENDS ADD NEW FRIENDS",
       imgUrl: projImg8,
 
